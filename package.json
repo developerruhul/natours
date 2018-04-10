@@ -1,0 +1,15 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:iamruhul/natours.git",
+  "author": "iamruhul <ruhulamin3482@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
