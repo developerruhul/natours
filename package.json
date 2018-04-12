@@ -7,9 +7,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+    "compile:sass": "node-sass sass/main.scss css/main.css -w",
+    "run-all": "npm-run-all compile:sass server",
+    "server": "live-server"
   },
   "devDependencies": {
-    "node-sass": "^4.8.3"
+    "node-sass": "^4.8.3",
+    "npm-run-all": "^4.1.2"
   }
 }

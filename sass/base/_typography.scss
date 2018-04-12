@@ -1,0 +1,58 @@
+body {
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: $color-grey;
+  padding: 3rem;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    font-weight: 400;
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+
+    animation: moveInLeft 0.7s ease-out forwards;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.74rem;
+
+    animation: moveInRight 0.7s ease-out forwards;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  background: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+
+  display: inline-block;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  transition: all 0.3s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(3deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.253);
+  }
+}
