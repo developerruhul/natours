@@ -51,3 +51,29 @@
     border-radius: 10rem;
   }
 }
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    text-decoration: none;
+    padding: 3px;
+    display: inline-block;
+    transition: all 0.2s ease;
+    color: $color-primary;
+    border-bottom: 1px solid $color-primary;
+    font-weight: 600;
+  }
+
+  &:hover {
+    background: $color-primary;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.158);
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.158);
+    transform: translateY(0);
+  }
+}
