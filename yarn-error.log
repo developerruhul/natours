@@ -2,13 +2,13 @@ Arguments:
   /usr/bin/node /usr/share/yarn/bin/yarn.js compile:sass
 
 PATH: 
-  /home/muhammad/bin:/home/muhammad/.local/bin:/home/muhammad/.npm-global/bin:/home/muhammad/bin:/home/muhammad/.local/bin:/home/muhammad/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+  /home/muhammad/bin:/home/muhammad/.local/bin:/home/muhammad/.npm-global/bin:/home/muhammad/bin:/home/muhammad/.local/bin:/home/muhammad/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 Yarn version: 
   1.5.1
 
 Node version: 
-  9.9.0
+  9.11.1
 
 Platform: 
   linux x64
@@ -1510,7 +1510,7 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit signal: SIGHUP
+  Exit code: 1
   Command: sh
   Arguments: -c node-sass sass/main.scss css/main.css -w
   Directory: /home/muhammad/Desktop/course-project/natours
