@@ -30,18 +30,23 @@
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     backface-visibility: hidden;
-    transition: 0.5s all, filter 0.2s;
+    transition: all 0.3s;
   }
 
   &__caption {
+    // CENTER THE CAOPTION
     @include center;
+
     text-align: center;
     color: white;
     font-size: 1.7rem;
     text-transform: uppercase;
+
+    // ANIMATION
     opacity: 0;
-    transition: 0.3s all;
+    transition: all 0.3s;
     backface-visibility: hidden;
+    transform: translate(-50%, 60%);
   }
 
   &:hover &__caption {
