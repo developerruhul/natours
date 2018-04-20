@@ -16,6 +16,41 @@
 
 <body>
 
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>01</span>About Natous</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>02</span>Your benfits</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>03</span>Popular tours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>04</span>Stories</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>05</span>Book now</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
             <img class="header__logo" src="./img/logo-white.png" alt="Logo">
@@ -306,9 +341,32 @@
                                 <input type="text" class="form__input" placeholder="Full name" id="name" required>
                                 <label for="name" class="form__label">Full name</label>
                             </div>
+
                             <div class="form__group">
                                 <input type="email" class="form__input" placeholder="Email" id="email" required>
                                 <label for="email" class="form__label">Email</label>
+                            </div>
+
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Small tour group
+                                    </label>
+                                </div>
+
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Large tour group
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn--green">Next Step &rarr;</button>
                             </div>
                         </form>
                     </div>
@@ -317,45 +375,67 @@
         </section>
     </main>
 
-
-    <!-- <section class="grid-test">
-        <div class="row">
-            <div class="col-1-of-2">col-1-of-2</div>
-            <div class="col-1-of-2">col-1-of-2</div>
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img class="footer__logo" srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
         </div>
 
         <div class="row">
-            <div class="col-1-of-3">col-1-of-3</div>
-            <div class="col-1-of-3">col-1-of-3</div>
-            <div class="col-1-of-3">col-1-of-3</div>
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Company</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Contact us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Careers</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Privacy policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built by
+                    <a href="#" class="footer__link">Ruhul Amin</a>, designed by
+                    <a href="https://codingheroes.io/" class="footer__link">Jonas Schmedtmann's</a>
+                </p>
+            </div>
         </div>
+    </footer>
 
-        <div class="row">
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-1-of-4">col-1-of-4</div>
+    <div class="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking </h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit amet
+                    massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae
+                    semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget gravida cum
+                    sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Gravida neque
+                    convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet
+                    nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa vitae tortor condimentum
+                    lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi porta.
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
         </div>
-
-        <div class="row">
-            <div class="col-1-of-3">col-1-of-3</div>
-            <div class="col-2-of-3">col-2-of-3</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-3-of-4">col-3-of-4</div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-1-of-4">col-1-of-4</div>
-            <div class="col-2-of-4">col-2-of-4</div>
-        </div>
-    </section> -->
-
-
+    </div>
 
 </body>
 

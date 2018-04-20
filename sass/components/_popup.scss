@@ -1,0 +1,47 @@
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(black, 0.8);
+  z-index: 3000;
+  top: 0;
+  left: 0;
+
+  &__content {
+    // CENTER THE BOX
+    @include center;
+
+    width: 75%;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2rem 4rem rgba(black, 0.2);
+    display: table;
+  }
+
+  &__left {
+    width: 33.3333333%;
+    display: table-cell;
+    overflow: hidden;
+  }
+
+  &__right {
+    width: 66.66666666%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-dark;
+    hyphens: auto;
+  }
+}

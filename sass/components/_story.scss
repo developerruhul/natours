@@ -34,10 +34,7 @@
   }
 
   &__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
+    @include center;
     text-align: center;
     color: white;
     font-size: 1.7rem;

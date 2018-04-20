@@ -1510,7 +1510,7 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit signal: SIGHUP
   Command: sh
   Arguments: -c node-sass sass/main.scss css/main.css -w
   Directory: /home/muhammad/Desktop/course-project/natours
