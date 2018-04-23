@@ -1274,9 +1274,9 @@ body {
   margin-top: -20vh;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 37.5em) {
   .section-about {
-    padding: 20rem 0;
+    padding: 30rem 0;
   }
 }
 
