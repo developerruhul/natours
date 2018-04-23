@@ -8,12 +8,16 @@
     font-family: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-color: rgba(white, 0.5);
+    background-color: #fff;
     border: none;
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
     transition: all 0.3s;
+
+    @include mq(tab-p) {
+      width: 100%;
+    }
 
     &::placeholder {
       color: $color-grey-dark;
@@ -50,6 +54,11 @@
   &__radio-group {
     width: 49%;
     display: inline-block;
+
+    @include mq(tab-p) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &__radio-input {

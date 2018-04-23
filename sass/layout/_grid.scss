@@ -4,6 +4,20 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include mq(tab-p) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include mq(tab-p) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+
+  // IPAD PRO PADDING
+  @include mq(tab-l) {
+    padding: 0 3rem;
   }
 
   @include clearfix;
@@ -13,6 +27,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include mq(tab-p) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include mq(tab-p) {
+      width: 100% !important;
     }
   }
 

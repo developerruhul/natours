@@ -26,14 +26,25 @@
     // ANIMATION
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
-    transition: all 0.5s .2s;
+    transition: all 0.5s 0.2s;
     will-change: transform, opacity;
+
+    @include mq(tab-p) {
+      width: 90%;
+      display: block;
+    }
   }
 
   &__left {
     width: 33.3333333%;
     display: table-cell;
     overflow: hidden;
+
+    @include mq(tab-p) {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
   }
 
   &__right {
@@ -41,11 +52,22 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include mq(tab-p) {
+      width: 100%;
+      vertical-align: initial;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    @include mq(tab-p) {
+      display: block;
+      width: 50%;
+      float: left;
+    }
   }
 
   &__text {
@@ -55,6 +77,11 @@
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-dark;
     hyphens: auto;
+    overflow: auto;
+
+    @include mq(phone) {
+      max-height: 30vh;
+    }
   }
 
   // OPEN STATE

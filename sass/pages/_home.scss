@@ -2,6 +2,10 @@
   background: $color-grey-light-1;
   padding: 25rem 0;
   margin-top: -20vh;
+
+  @include mq(tab-p) {
+    padding: 20rem 0;
+  }
 }
 
 .section-features {
@@ -18,26 +22,42 @@
   & > * {
     transform: skewY(7deg);
   }
+
+  @include mq(tab-p) {
+    padding: 10rem 0;
+  }
 }
 
 .section-tours {
   background: $color-grey-light-1;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem;
+
+  @include mq(tab-p) {
+    padding: 20rem 0 10rem 0;
+  }
 }
 
 .section-stories {
   padding: 15rem 0;
   position: relative;
+
+  @include mq(tab-p) {
+    padding: 10rem 0;
+  }
 }
 
 .section-book {
-  padding: 15rem;
+  padding: 15rem 0;
   background-image: linear-gradient(
     to right bottom,
     $color-primary,
     $color-primary-dark
   );
+
+  @include mq(tab-p) {
+    padding: 10rem 0;
+  }
 }
 
 .book {
@@ -48,15 +68,40 @@
       transparent 50%
     ),
     url(../img/nat-10.jpg);
+
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(black, 0.2);
 
-  // TEST
-  height: 50rem;
+  @include mq(tab-l) {
+    background-image: linear-gradient(
+        105deg,
+        rgba(white, 0.9) 0%,
+        rgba(white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../img/nat-10.jpg);
+  }
+
+  @include mq(tab-p) {
+    background-image: linear-gradient(
+        to right,
+        rgba(white, 0.9) 0%,
+        rgba(white, 0.9) 100%
+      ),
+      url(../img/nat-10.jpg);
+  }
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include mq(tab-l) {
+      width: 65%;
+    }
+
+    @include mq(tab-p) {
+      width: 100%;
+    }
   }
 }
