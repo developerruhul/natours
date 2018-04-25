@@ -6,13 +6,26 @@
   "author": "iamruhul <ruhulamin3482@gmail.com>",
   "license": "MIT",
   "private": false,
+
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css -w",
-    "run-all": "npm-run-all compile:sass server",
-    "server": "live-server"
+    "watch:sass": "node-sass sass/main.scss css/main.css",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "concat:css":
+      "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "autoprefix:css":
+      "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress:css":
+      "node-sass css/style.prefix.css css/main.css --output-style compressed",
+    "build": "npm-run-all compile:sass concat:css autoprefix:css compress:css"
   },
+
   "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "concat": "^1.0.3",
     "node-sass": "^4.8.3",
-    "npm-run-all": "^4.1.2"
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0"
   }
 }

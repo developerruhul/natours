@@ -184,7 +184,7 @@
     font-weight: 100;
   }
 
-  @include mq(tab-l) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 5px;
     background-color: #fff;
