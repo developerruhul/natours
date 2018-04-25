@@ -2,14 +2,24 @@
   height: 95vh;
   background: linear-gradient(
       to right bottom,
-      rgba(80, 214, 56, 0.726),
-      rgba(33, 201, 145, 0.65)
+      rgba($color-primary, 0.726),
+      rgba($color-primary-light, 0.65)
     ),
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  // ON A HIGH RESOLUTION IMAGE
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.726),
+        rgba($color-primary-light, 0.65)
+      ),
+      url(../img/hero.jpg);
+  }
 
   @include mq(phone) {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
