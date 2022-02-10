@@ -20,7 +20,7 @@
     "autoprefixer": "^8.3.0",
     "concat": "^1.0.3",
     "gulp": "^3.9.1",
-    "node-sass": "^4.8.3",
+    "node-sass": "^7.0.0",
     "npm-run-all": "^4.1.2",
     "postcss-cli": "^5.0.0"
   }
